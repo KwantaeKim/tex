@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# But do NOT ignore this .gitignore file itself
+!.gitignore
+
+# And do NOT ignore these two .tex files
+!tsirc_setting.tex
+!tsirc_template.tex
+!LICENSE
