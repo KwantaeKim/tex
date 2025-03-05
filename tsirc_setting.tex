@@ -1,0 +1,45 @@
+% --------------------------------------------- %
+% Packages and Configurations
+% --------------------------------------------- %
+\usepackage[pdftex]{graphicx}   % images
+\usepackage[table]{xcolor}      % table and colors
+\raggedright                    % left align
+
+\usepackage{enumitem}           % bullet items
+\setlist{nosep}                 % no space between list items
+
+\usepackage[implicit=false]{hyperref}   % links
+\hypersetup{colorlinks=true, urlcolor=cyan}
+
+\usepackage[sfdefault]{carlito} % font
+
+\usepackage{setspace}           % line spacing
+\singlespacing                  % 1.5 spacing
+
+% page margins
+\usepackage[left=20mm, top=20mm, bottom=20mm, right=20mm]{geometry}
+
+% Setting spacing for section, subsection and paragraph
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\bfseries}
+\titlespacing{\section}{0 cm}{6pt}{0pt}
+\titlespacing{\subsection}{0 cm}{6pt}{0pt}
+\titlespacing{\subsubsection}{0 cm}{6pt}{0pt}
+\setlength{\parskip}{6pt}
+
+% header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyfoot{}
+\fancyhead{}
+\setlength{\headheight}{15pt}       % to avoid warning
+\addtolength{\topmargin}{-2.5pt}    % to avoid warning
+\renewcommand{\headrulewidth}{0pt}  % remove line
+\rhead{page \fancyplain{}{\thepage} ({\pageref{lastpage}})}
+\chead{\docname}
+\lfoot{TSirc group}
+\rfoot{Aalto University}
+
+\usepackage{fontawesome5}       % for using icons
+\renewcommand{\texttt}[1]{{\footnotesize\ttfamily #1}}  % smaller font for texttt
