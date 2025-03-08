@@ -7,4 +7,5 @@
 # And do NOT ignore these two .tex files
 !tsirc_setting.tex
 !tsirc_template.tex
+!fontawesome5.pdf
 !LICENSE
