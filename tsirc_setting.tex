@@ -42,4 +42,11 @@
 \rfoot{Aalto University}
 
 \usepackage{fontawesome5}       % for using icons
-\renewcommand{\texttt}[1]{{\footnotesize\ttfamily #1}}  % smaller font for texttt
+
+\usepackage{tcolorbox}          % colored boxes
+
+\renewcommand{\texttt}[1]{{\footnotesize\ttfamily #1}}      % smaller font for texttt
+\newcommand{\sverb}[1]{\texttt{\detokenize{#1}}}      % smaller font for verbatim
+% for proper font of code representation
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}

@@ -24,9 +24,15 @@
 
 % --------------------------------------------- %
 
-\section{Section}
+\section{Usage Examples}
 
-Description of the section.
+\begin{itemize}
+    \item[\footnotesize\faCode] \textbf{Step 2:} Run \sverb{gedit ~/ssh-<machine>.sh} to make a shell file and add the following lines
+          \begin{tcolorbox}[colback=black!5,colframe=black!50,arc=1mm]
+              \texttt{\#}\sverb{!/usr/bin/env bash} \\
+              \sverb{ssh -X -t <address> "./<example>.sh; exec \$SHELL"}
+          \end{tcolorbox}
+\end{itemize}
 
 % Page Counter
 \label{lastpage}
