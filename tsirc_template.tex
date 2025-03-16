@@ -2,6 +2,7 @@
 % Doc Info
 % --------------------------------------------- %
 \documentclass[a4paper,12pt]{article}
+\newcommand{\LogoPath}{TSirc-rounded.png}
 \newcommand{\docname}{Setup Guideline}
 
 \input{tsirc_setting}
@@ -27,12 +28,21 @@
 \section{Usage Examples}
 
 \begin{itemize}
-    \item[\footnotesize\faCode] \textbf{Step 2:} Run \sverb{gedit ~/ssh-<machine>.sh} to make a shell file and add the following lines
-          \begin{tcolorbox}[colback=black!5,colframe=black!50,arc=1mm]
-              \texttt{\#}\sverb{!/usr/bin/env bash} \\
-              \sverb{ssh -X -t <address> "./<example>.sh; exec \$SHELL"}
-          \end{tcolorbox}
+    \item[\footnotesize\faCode] \textbf{Step 1:} Run \sverb{gedit ~/ssh-<machine>.sh} to make a shell file and add the following lines
+          \vspace{-1em}\begin{minted}{bash}
+git clone
+cd bag_framework
+source setup_env.sh
+        \end{minted}
+          \vspace{-1em}\begin{minted}[escapeinside=@@]{bash}
+    cd virtuoso_BAG
+    ./pip3userinstall.sh
+    source sourceme.csh
+    virtuoso @&@
+        \end{minted}
 \end{itemize}
+
+% --------------------------------------------- %
 
 % Page Counter
 \label{lastpage}
