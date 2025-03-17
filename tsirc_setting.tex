@@ -10,8 +10,8 @@
 \usepackage{enumitem}           % bullet items
 \setlist{nosep}                 % no space between list items
 
-\usepackage[implicit=false]{hyperref}   % links
-\hypersetup{colorlinks=true, urlcolor=cyan}
+\usepackage{hyperref}   % links
+\hypersetup{colorlinks=true, urlcolor=cyan, linkcolor={}}
 
 \usepackage[sfdefault]{carlito} % font
 
@@ -46,8 +46,11 @@
 
 \usepackage{fontawesome5}       % for using icons
 
-\usepackage{tcolorbox}          % colored boxes
-\usepackage{minted}             % code representation
+% --------------------------------------------- %
+% code representation
+
+\usepackage{tcolorbox}
+\usepackage{minted}
 \setminted{
     frame=lines,
     framesep=2mm,
@@ -61,5 +64,23 @@
 % for proper font of code representation
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
+
+% --------------------------------------------- %
+% table of contents
+
+\usepackage{tocloft}
+
+% Remove "Contents" title
+\renewcommand{\contentsname}{}
+
+% Make Section Titles Bold and Bigger in ToC
+\renewcommand{\cftsecfont}{\bfseries\large}
+\renewcommand{\cftsubsecfont}{\bfseries}
+
+% Add Dotted Lines Between Titles and Page Numbers
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% --------------------------------------------- %
+
 
 \usepackage{kotex}
