@@ -4,7 +4,7 @@
 # But do NOT ignore this .gitignore file itself
 !.gitignore
 
-# And do NOT ignore these two .tex files
+# And do NOT ignore these files
 !tsirc_setting.tex
 !tsirc_template.tex
 !fontawesome5.pdf
