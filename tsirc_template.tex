@@ -7,6 +7,7 @@
 \newcommand{\docname}{\textcolor{darkred}{Your Title}}
 
 \input{\TemplateDir/tsirc_setting}
+\addbibresource{ref.bib}
 
 % --------------------------------------------- %
 % Main Part
@@ -45,9 +46,10 @@ source setup_env.sh
         \end{minted}
 \end{itemize}
 
-% --------------------------------------------- %
+Reference example -> \cite{razavi2017design}
 
-% Page Counter
-\label{lastpage}
+% --------------------------------------------- %
+\printbibliography
+\label{lastpage}        % Page Counter
 
 \end{document}
