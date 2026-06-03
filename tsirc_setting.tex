@@ -5,6 +5,10 @@
 \usepackage[table]{xcolor}      % table and colors
 \definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}     % you can use by: \textcolor{darkgreen}{text}
 \definecolor{darkred}{HTML}{C80000}
+\definecolor{darkyellow}{HTML}{F5B301}
+\definecolor{darkblue}{RGB}{0, 79, 144}         % primary blue (figures, tables)
+\definecolor{deepblue}{HTML}{1F4E79}            % darkest blue tier (e.g., storage)
+\definecolor{navy}{HTML}{16243A}                % near-black navy (text)
 \raggedright                    % left align
 
 \usepackage{enumitem}           % bullet items
@@ -47,6 +51,13 @@
 \usepackage{fontawesome5}       % for using icons
 \usepackage{amsmath}            % for math
 \usepackage{amssymb}            % for math
+
+% Inline marks for good / bad examples
+\newcommand{\exbad}{\textcolor{darkred}{\faTimes}}
+\newcommand{\exgood}{\textcolor{darkgreen}{\faCheckCircle}}
+\newcommand{\exeg}{\textcolor{darkyellow}{\faLightbulb}}
+\newcommand{\exq}{\faQuestionCircle}
+\newcommand{\exa}{\faCommentDots}
 
 % --------------------------------------------- %
 % code representation
