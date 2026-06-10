@@ -3,6 +3,7 @@
 % --------------------------------------------- %
 \usepackage[pdftex]{graphicx}   % images
 \usepackage[table]{xcolor}      % table and colors
+\usepackage{multirow}           % merged multi-row table cells
 \definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}     % you can use by: \textcolor{darkgreen}{text}
 \definecolor{darkred}{HTML}{C80000}
 \definecolor{darkyellow}{HTML}{F5B301}
@@ -100,6 +101,7 @@
 % --------------------------------------------- %
 % graph drawing
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta}    % filled triangular arrow tips
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 
