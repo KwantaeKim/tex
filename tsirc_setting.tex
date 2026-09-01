@@ -10,7 +10,11 @@
 \definecolor{darkblue}{RGB}{0, 79, 144}         % primary blue (figures, tables)
 \definecolor{deepblue}{HTML}{1F4E79}            % darkest blue tier (e.g., storage)
 \definecolor{navy}{HTML}{16243A}                % near-black navy (text)
-\raggedright                    % left align
+\definecolor{darkpurple}{RGB}{138, 99, 201}     % purple accent
+% justified text: flush on both left and right margins (Word's "Justify")
+\hyphenpenalty=10000            % no word hyphenation at line breaks
+\exhyphenpenalty=10000
+\emergencystretch=3em           % absorb long unbreakable tokens instead of overflowing
 
 \usepackage{enumitem}           % bullet items
 \setlist{nosep}                 % no space between list items
@@ -34,6 +38,7 @@
 \titlespacing{\subsection}{0 cm}{6pt}{0pt}
 \titlespacing{\subsubsection}{0 cm}{6pt}{0pt}
 \setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}     % no paragraph indentation
 
 % header and footer
 \usepackage{fancyhdr}
@@ -59,6 +64,8 @@
 \newcommand{\exeg}{\textcolor{darkyellow}{\faLightbulb}}
 \newcommand{\exq}{\faQuestionCircle}
 \newcommand{\exa}{\faCommentDots}
+% Circled number, e.g. \circnum{1}
+\newcommand{\circnum}[1]{\tikz[baseline={([yshift=-0.7ex]c.center)}]{\node[circle, fill=darkred, text=white, inner sep=0.5pt, minimum size=1.2em, font=\scriptsize\bfseries] (c) {#1};}}
 
 % --------------------------------------------- %
 % code representation
